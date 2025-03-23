@@ -3,7 +3,7 @@ title: ""
 date: "2025-03-23"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "TypeScript is one of the most popular programming languages for building scalable and maintainable web applications."
+excerpt: "TypeScript is one of the most popular programming languages for building scalable and maintainable web applications.git"
 isFeatured: false
 category: "Type Script"
 ---
