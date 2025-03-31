@@ -94,7 +94,7 @@ function makeSound(animal: Dog | Cat) {
 
 In this example, the `isDog` function is a Type Guard that checks if the `animal` is an instance of the `Dog` class. This allows TypeScript to narrow down the type of `animal` within the conditional blocks.
 
-### Conclusion
+### Conclusion (I think good practice will be to have only one conclusion in the end of the blog)
 
 Type Guards in TypeScript are crucial for writing safe, type-safe code, especially when dealing with union types or complex type checks. They allow TypeScript to infer and narrow down types based on certain conditions, ensuring that only appropriate operations are performed. By leveraging Type Guards, you can improve the robustness and maintainability of your codebase, reducing the risk of errors and making your code easier to understand.
 
@@ -298,7 +298,7 @@ function processValue(value: unknown) {
 
 In this example, the `value is string` in the type guard allows TypeScript to understand that within the `if` block, `value` is a string, enabling safer operations like calling `toUpperCase()`.
 
-#### 2. **Type-safe Assertions**
+#### 2. **Type-safe Assertions** (Will be good to provide code example of "value as Type)
 
 TypeScript can use **type assertions** (e.g., `value as Type`), but they should be used sparingly and cautiously. Type assertions bypass TypeScript's type checking, leading to potential runtime errors if the asserted type is incorrect.
 
