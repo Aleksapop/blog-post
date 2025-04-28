@@ -6,14 +6,13 @@ image: "ts-big-o-notation.png"
 excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
 isFeatured: false
 category: "Nodejs"
-
+---
 
 
 
 #### Goal: 
 By the end of this lesson, you will understand how to create a basic REST API using only Node.js, utilizing the built-in `http` module to serve a simple JSON response.
 
----
 
 ### Prerequisites
 
