@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "TypeScript Mapped Types: Creating Flexible Types Dynamically"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript is a powerful language that extends JavaScript by adding static typing."
 isFeatured: false
 category: "Type Script"
 ---
 
-TypeScript Mapped Types: Creating Flexible Types Dynamically
-TypeScript is a powerful language that extends JavaScript by adding static typing. One of its most valuable features is Mapped Types, which allows developers to create flexible and reusable types dynamically. If you've ever wanted to transform or modify an existing type in a structured way, mapped types are your go-to tool.
+
+One of its most valuable features is Mapped Types, which allows developers to create flexible and reusable types dynamically. If you've ever wanted to transform or modify an existing type in a structured way, mapped types are your go-to tool.
 This blog post'll explore mapped types, how they work, and some practical use cases to improve your TypeScript code. Whether you're a beginner or an advanced TypeScript user, this guide will help you understand how to leverage mapped types for better scalability and maintainability.
 
 ### **Mapped Types in TypeScript**  

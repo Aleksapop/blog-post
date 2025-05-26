@@ -1,14 +1,14 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "Advanced TypeScript Type Guards: Writing Safer Code"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript is a powerful language that offers static typing on top of JavaScript, helping developers catch errors early in development."
 isFeatured: false
 category: "Type Script"
 ---
 
-Advanced TypeScript Type Guards: Writing Safer Code
+
 TypeScript is a powerful language that offers static typing on top of JavaScript, helping developers catch errors early in development. However, ensuring type safety can become a challenge as complex projects grow. One of TypeScript's most powerful features to help with this is type guards.
 In this blog post, we’ll dive deep into advanced TypeScript type guards, how they work, and how they can help you write safer, more maintainable code. Whether new to type guards or an experienced developer, this post will help you level up your TypeScript skills.
 

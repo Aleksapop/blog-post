@@ -1,135 +1,194 @@
 ---
 title: "How to Create a Basic REST API with Node.js (Without Express)"
-date: "2025-04-27"
+date: "2025-05-04"
 author: "Slavo"
-image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+image: "node-api-guide.png"
+excerpt: "Learn to build a lightweight REST API in Node.js from scratch using just the built-in HTTP module. Perfect for beginners!"
 isFeatured: false
 category: "Nodejs"
 ---
 
+## 🚀 Goal
 
+By the end of this tutorial, you'll know how to:
 
-#### Goal: 
-By the end of this lesson, you will understand how to create a basic REST API using only Node.js, utilizing the built-in `http` module to serve a simple JSON response.
-
-
-### Prerequisites
-
-- Basic knowledge of JavaScript.
-- A text editor (like VS Code) and Node.js installed on your computer.
+* Create a basic REST API using only Node.js (no Express).
+* Serve a JSON response using the built-in `http` module.
+* Understand and navigate routes with basic condition handling.
 
 ---
 
-### Introduction
+## 🧠 Prerequisites
 
-In this lesson, we’re going to create a simple REST API using Node.js **without** the need for any external libraries like Express. You’ll use Node.js's built-in `http` module to handle HTTP requests and send JSON responses.
+Before starting, make sure you have:
 
-#### What is REST API?
-
-A REST (Representational State Transfer) API allows communication between different systems over HTTP. It's a way to expose some functionality (like fetching data) via URLs. We will be implementing a simple API with the following routes:
-
-- `GET /api/greeting`: Returns a "Hello, World!" message in JSON format.
+* Basic JavaScript knowledge (variables, functions, conditionals).
+* [Node.js installed](https://nodejs.org) on your system.
+* A code editor like [Visual Studio Code](https://code.visualstudio.com/).
 
 ---
 
-### Step-by-Step Guide
+## 📸 Important – Upload the Demo Image
 
-#### 1. **Setup your project:**
+Make sure to **upload the image named `node-api-guide.png`** to the **same folder or directory** where your blog post file is stored. This ensures the blog platform can locate and render the image correctly in the post.
 
-First, let's initialize a basic Node.js project.
+The image should visually represent a basic Node.js architecture or server setup. You can create your own or use a royalty-free illustration. Save it with the filename exactly as specified above (`node-api-guide.png`) to match the frontmatter reference.
 
-1. Create a folder for your project, e.g., `node-api`.
-2. Inside the folder, create a new file named `index.js`.
-3. Open `index.js` in your text editor.
+---
 
-#### 2. **Write the code:**
+## 📚 What is a REST API?
 
-Now, let’s set up a basic server using the `http` module.
+A **REST API** (Representational State Transfer) is a system that allows different applications to communicate via HTTP requests. APIs expose endpoints (URLs) that clients (like browsers or apps) can call to:
+
+* Get data (`GET`)
+* Add data (`POST`)
+* Update data (`PUT`)
+* Delete data (`DELETE`)
+
+In this guide, we’ll build a single endpoint:
+
+* `GET /api/greeting` → Returns a simple JSON message.
+
+---
+
+## 🛠️ Step-by-Step Guide
+
+### 1. Setup Your Project
+
+Let’s get started by setting up a minimal Node.js environment.
+
+```bash
+# Create a new folder and navigate into it
+mkdir node-api && cd node-api
+
+# Create your main server file
+touch index.js
+```
+
+Open the `index.js` file in your code editor.
+
+---
+
+### 2. Add Your Server Code
+
+Copy and paste the following code into `index.js`:
 
 ```javascript
-// Import the http module to create the server
+// Import the built-in HTTP module
 const http = require('http');
 
-// Define the server
+// Create an HTTP server
 const server = http.createServer((req, res) => {
-  // Set the response header for JSON
   res.setHeader('Content-Type', 'application/json');
 
-  // Check for the requested route
+  // Handle the specific route
   if (req.method === 'GET' && req.url === '/api/greeting') {
-    // Return a JSON response for the greeting route
-    res.statusCode = 200;  // Status code for successful request
+    res.statusCode = 200;
     res.end(JSON.stringify({ message: 'Hello, World!' }));
   } else {
-    // For all other routes, return a 404 Not Found
     res.statusCode = 404;
     res.end(JSON.stringify({ message: 'Route not found' }));
   }
 });
 
-// Define the port where the server will listen
+// Define the port
 const PORT = 3000;
 
-// Start the server
+// Start listening
 server.listen(PORT, () => {
-  console.log(`Server is running on http://localhost:${PORT}`);
+  console.log(`Server is running at http://localhost:${PORT}`);
 });
 ```
 
-#### 3. **Explanation of the Code:**
+---
 
-- **`http.createServer`**: This method creates a server that listens for requests. It takes a callback function with two parameters: `req` (request) and `res` (response).
-- **`res.setHeader`**: Sets the content type of the response to `application/json`.
-- **`req.method` and `req.url`**: These properties allow us to check the HTTP request method (GET, POST, etc.) and the URL being requested.
-- **`res.statusCode`**: Sets the HTTP status code of the response (200 for success, 404 for not found).
-- **`res.end()`**: Ends the response and sends data back to the client.
+### 3. Code Breakdown
 
-#### 4. **Run the Server:**
+| Line                  | Explanation                                       |
+| --------------------- | ------------------------------------------------- |
+| `require('http')`     | Loads the Node.js module to create a server.      |
+| `http.createServer()` | Instantiates a new server.                        |
+| `req.method`          | Detects the HTTP method (GET, POST, etc).         |
+| `req.url`             | Reads the requested path (e.g., `/api/greeting`). |
+| `res.setHeader()`     | Sets response headers (we're returning JSON).     |
+| `res.statusCode`      | Sends the HTTP status code (e.g., 200, 404).      |
+| `res.end()`           | Sends the final response.                         |
 
-In your terminal, navigate to the folder where you saved `index.js`, and run the server:
+---
+
+### 4. Run Your Server
+
+Use your terminal:
 
 ```bash
 node index.js
 ```
 
-Your server should now be running on `http://localhost:3000`.
+You should see:
 
-#### 5. **Test the API:**
-
-1. Open your browser and go to `http://localhost:3000/api/greeting`. You should see:
-
-   ```json
-   { "message": "Hello, World!" }
-   ```
-
-2. If you try accessing a route that doesn't exist (e.g., `http://localhost:3000/api/unknown`), you will get a response like:
-
-   ```json
-   { "message": "Route not found" }
-   ```
+```javascript
+Server is running at http://localhost:3000
+```
 
 ---
 
-### Recap
+### 5. Test Your Endpoint
 
-- We created a simple REST API using the built-in `http` module in Node.js.
-- We learned how to handle different HTTP methods (`GET` in this case).
-- We returned JSON data as a response to the client.
-- We also checked the status code to communicate success or failure.
+#### ✅ Valid Route
 
-### Next Steps
+Open your browser or Postman and go to:
 
-- Now that you’ve built a basic REST API, you can try adding more routes, like `POST`, `PUT`, or `DELETE`.
-- You can also try integrating a database like MongoDB to serve dynamic data.
+```javascript
+http://localhost:3000/api/greeting
+```
+
+You should get:
+
+```json
+{ "message": "Hello, World!" }
+```
+
+#### ❌ Invalid Route
+
+Try:
+
+```javascript
+http://localhost:3000/api/unknown
+```
+
+You'll see:
+
+```json
+{ "message": "Route not found" }
+```
+
+---
+
+## 🔁 Recap
+
+Here’s what you’ve achieved:
+
+* Built a functioning API without Express.
+* Used the `http` module directly.
+* Served JSON responses.
+* Handled routing with `if` conditions.
+
+---
+
+## 🚧 Next Steps
+
+* Add more routes: `/api/time`, `/api/users`, etc.
+* Explore other HTTP methods like `POST`, `PUT`, and `DELETE`.
+* Connect to a database (like MongoDB or SQLite).
+* Later, try switching to Express to simplify routing and middleware.
 
 Happy coding!
 
 \*\* Book Recommendation:
 
-- [React and React Native: A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition](https://amzn.to/3CStF7m)
-- [React Key Concepts](https://amzn.to/43XOCJM)
-- [Pragmatic Programmer](https://amzn.to/3W1P4oL) **_The: Your journey to mastery, 20th Anniversary Edition_**
+-[React and React Native: A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition](https://amzn.to/3CStF7m)
+-[React Key Concepts](https://amzn.to/43XOCJM)
+-[Pragmatic Programmer](https://amzn.to/3W1P4oL) **_The: Your journey to mastery, 20th Anniversary Edition_**
 
 [Mentorship & Consulting - Contact us for more info](/contact)
 

@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "TypeScript Modules and Namespaces: Organizing Your Code"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "As your TypeScript codebase grows, maintaining structure and scalability becomes a challenge."
 isFeatured: false
 category: "Type Script"
 ---
 
-TypeScript Modules and Namespaces: Organizing Your Code for Better Scalability
-As your TypeScript codebase grows, maintaining structure and scalability becomes a challenge. One of the best practices in TypeScript is organizing your code into manageable chunks using Modules and Namespaces. These features allow you to avoid global scope pollution, improve code readability, and simplify debugging and maintenance. In this blog post, we will explore TypeScript modules and namespaces, how they differ, and how to use them to organize your code effectively.
+
+One of the best practices in TypeScript is organizing your code into manageable chunks using Modules and Namespaces. These features allow you to avoid global scope pollution, improve code readability, and simplify debugging and maintenance. In this blog post, we will explore TypeScript modules and namespaces, how they differ, and how to use them to organize your code effectively.
 
 TypeScript Modules and Namespaces: Organizing Your Code
 

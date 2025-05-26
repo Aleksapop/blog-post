@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "Mastering TypeScript Decorators: A Deep Dive"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "If you've ever worked with Angular or other modern frameworks, you've likely encountered them."
 isFeatured: false
 category: "Type Script"
 ---
 
-Mastering TypeScript Decorators: A Deep Dive
-TypeScript decorators are a powerful feature that enables developers to enhance and modify classes, methods, and properties at runtime. If you've ever worked with Angular or other modern frameworks, you've likely encountered them. However, understanding how decorators work under the hood can unlock new levels of flexibility and maintainability in your TypeScript applications.
+
+However, understanding how decorators work under the hood can unlock new levels of flexibility and maintainability in your TypeScript applications.
 This guide'll deeply dive into TypeScript decorators, exploring their syntax, use cases, and best practices. By the end of this article, you'll have a solid understanding of leveraging decorators effectively in your projects.
 
 ### What Are TypeScript Decorators?

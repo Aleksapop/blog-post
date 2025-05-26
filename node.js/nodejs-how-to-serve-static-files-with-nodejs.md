@@ -162,7 +162,7 @@ Congratulations 🎉 — you've served static files with pure Node.js!
 
 ---
 
-# 🔥 Practical Challenge (Make it Even Better!)
+***Practical Challenge (Make it Even Better!)***
 
 ✅ 1. Create a new folder called `public/` and move `index.html` and `image.jpg` inside it.
 
@@ -178,7 +178,7 @@ path.join(__dirname, 'public', 'index.html')
 
 ---
 
-# 💬 Why This Matters
+***Why This Matters***
 
 In the real world:
 
@@ -188,7 +188,7 @@ In the real world:
 
 ---
 
-# 📚 Final Tip
+***Final Tip***
 
 **Practice small wins daily.**  
 Real skills are built step-by-step — by making small working projects like this one.
@@ -197,7 +197,7 @@ You're doing amazing. Keep going! 🚀
 
 ---
 
-# 📚 Recommended Books
+***Recommended Books***
 
 - [React and React Native (Complete Guide, 3rd Edition)](https://amzn.to/3CStF7m)
 - [React Key Concepts](https://amzn.to/43XOCJM)
@@ -205,14 +205,14 @@ You're doing amazing. Keep going! 🚀
 
 ---
 
-# 🤝 Connect With Us
+***Connect With Us***_
 
 - [Mentorship & Consulting - Contact Us](/contact)
 - [Join Our Discord Community](https://discord.gg/A75tvDvZ) — *Learn, grow, and connect with like-minded developers!*
 
 ---
 
-# 🎯 Final Reminder
+***Final Reminder***
 
 When uploading your `image.jpg`, **make sure it’s placed in the same directory as `server.js` and `index.html`** (or inside `/public` if you upgrade the project).  
 Otherwise, Node.js won't find it and your image won’t load!

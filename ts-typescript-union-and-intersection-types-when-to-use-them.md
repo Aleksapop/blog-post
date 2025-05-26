@@ -1,16 +1,16 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "TypeScript Union and Intersection Types: When to Use Them"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript is a compelling language that brings strong typing to JavaScript, providing developers with the tools to create more robust and maintainable applications."
 isFeatured: false
 category: "Type Script"
 ---
 
 
-TypeScript Union and Intersection Types: When to Use Them
-TypeScript is a compelling language that brings strong typing to JavaScript, providing developers with the tools to create more robust and maintainable applications. Among the many features TypeScript offers, Union and Intersection Types are essential for handling different data types. Understanding when and how to use these types can significantly improve the quality of your code.
+
+Among the many features TypeScript offers, Union and Intersection Types are essential for handling different data types. Understanding when and how to use these types can significantly improve the quality of your code.
 In this blog post, we will explore the types of Union and Intersection, how to use them, and, most importantly, when to apply them in your projects.
 
 TypeScript Union and Intersection Types: When to Use Them

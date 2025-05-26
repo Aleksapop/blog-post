@@ -1,6 +1,6 @@
 ---
 title: "Making External API Requests in Node.js"
-date: "2025-04-27"
+date: "2025-05-03"
 author: "Slavo"
 image: "ts-big-o-notation.png"
 excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
@@ -8,24 +8,21 @@ isFeatured: false
 category: "Nodejs"
 ---
 
-**Lesson Overview**  
-In this lesson, we’ll learn how to make external API requests in Node.js using two popular libraries: `node-fetch` and `axios`. You'll understand how to fetch data from a public API and handle the responses.
+## 🧠 Lesson Overview
 
-**What You’ll Learn:**  
+In this hands-on micro-lesson, you'll learn how to:
 
-1. Setting up a Node.js project.
-2. Installing the necessary packages (`node-fetch` and `axios`).
-3. Making GET requests to fetch data from an external API.
-4. Handling and displaying the API response.
+* Set up a basic Node.js project
+* Install required libraries (`node-fetch` and `axios`)
+* Fetch data from external APIs using both libraries
+* Understand and compare the differences between them
 
 ---
 
-#### 1. **Setting up a Node.js Project**
+## ✅ Step 1: Setting Up a Node.js Project
 
-Before we start making API requests, we need to set up a basic Node.js project.
-
-1. **Initialize a new Node.js project**  
-   Open a terminal and create a new folder for your project:
+1. **Create a New Project Directory**
+   Open your terminal and run the following commands:
 
    ```bash
    mkdir node-api-requests
@@ -33,128 +30,156 @@ Before we start making API requests, we need to set up a basic Node.js project.
    npm init -y
    ```
 
-2. **Install dependencies**  
-   Now, install `node-fetch` or `axios` (you can use either of these libraries). For this lesson, we'll demonstrate both.
+2. **Install Dependencies**
 
    ```bash
    npm install node-fetch axios
    ```
 
+   > We're installing both libraries so you can try out both examples.
+
 ---
 
-#### 2. **Making API Requests with `node-fetch`**
+## 🌐 Step 2: Making API Requests Using `node-fetch`
 
-Now, let’s make a request using the `node-fetch` package. It is a lightweight library that allows us to use the `fetch` function in Node.js.
+### 1. **Create a File**
 
-1. **Create a new file named `fetchExample.js`**  
-   In your project folder, create a file called `fetchExample.js`.
+In your project directory, create a new file named:
 
-2. **Write the code to fetch data from a public API**
+```bash
+touch fetchExample.js
+```
 
-Here’s how you can fetch data from a public API using `node-fetch`:
+### 2. **Write the Fetch Code**
 
 ```javascript
 // fetchExample.js
 const fetch = require('node-fetch');
 
-const url = 'https://jsonplaceholder.typicode.com/posts/1';  // A public API endpoint
+const url = 'https://jsonplaceholder.typicode.com/posts/1';
 
-// Fetch data from the API
 fetch(url)
-  .then(response => response.json())  // Parse the JSON response
+  .then(response => response.json())
   .then(data => {
-    console.log('Fetched Data:', data);  // Log the data
+    console.log('Fetched Data:', data);
   })
   .catch(error => {
-    console.error('Error fetching data:', error);  // Handle errors
+    console.error('Error fetching data:', error);
   });
 ```
 
-3.**Run the code**
+### 3. **Run the File**
 
 ```bash
 node fetchExample.js
 ```
 
-You should see a response similar to this in your terminal:
+You should see something like this in your terminal:
 
 ```json
 Fetched Data: {
   "userId": 1,
   "id": 1,
-  "title": "sunt aut facere repellat provident occaecati excepturi optio reprehenderit",
-  "body": "quia et suscipit\nsuscipit...exercitationem praesentium\nquasi...etc"
+  "title": "...",
+  "body": "..."
 }
 ```
 
 ---
 
-#### 3. **Making API Requests with `axios`**
+## ⚡ Step 3: Making API Requests Using `axios`
 
-Next, let’s see how you can use `axios` to make the same request.
+### 1. **Create Another File**
 
-1. **Create a new file named `axiosExample.js`**  
-   In your project folder, create another file called `axiosExample.js`.
+```bash
+touch axiosExample.js
+```
 
-2. **Write the code to fetch data from a public API using `axios`**
+### 2. **Write the Axios Code**
 
 ```javascript
 // axiosExample.js
 const axios = require('axios');
 
-const url = 'https://jsonplaceholder.typicode.com/posts/1';  // A public API endpoint
+const url = 'https://jsonplaceholder.typicode.com/posts/1';
 
-// Make a GET request using axios
 axios.get(url)
   .then(response => {
-    console.log('Fetched Data:', response.data);  // Log the data
+    console.log('Fetched Data:', response.data);
   })
   .catch(error => {
-    console.error('Error fetching data:', error);  // Handle errors
+    console.error('Error fetching data:', error);
   });
 ```
 
-3.**Run the code**
+_**3. Run the File**_
 
 ```bash
 node axiosExample.js
 ```
 
-You should see the same response as with `node-fetch`.
+You’ll see the same output as the previous example.
 
 ---
 
-#### 4. **Key Differences Between `node-fetch` and `axios`**
+## 🔍 Step 4: Key Differences Between `node-fetch` and `axios`
 
-- **`node-fetch`**: A minimal library that is great for making simple HTTP requests. It uses the native `fetch` API, which is available in the browser, but requires polyfilling in Node.js.
-- **`axios`**: A more feature-rich HTTP client that provides more functionality out-of-the-box (e.g., automatic JSON parsing, request and response interceptors, etc.). It is a bit larger than `node-fetch`.
-
----
-
-#### 5. **Exercise: Fetch Data from Another API**
-
-Now, let’s practice fetching data from another public API. You can use [https://api.coindesk.com/v1/bpi/currentprice/BTC.json](https://api.coindesk.com/v1/bpi/currentprice/BTC.json) for live Bitcoin price data.
-
-- Use either `node-fetch` or `axios` to fetch the current Bitcoin price.
-- Display the price in the console.
+| Feature      | `node-fetch`                   | `axios`                              |
+| ------------ | ------------------------------ | ------------------------------------ |
+| Size         | Lightweight                    | Larger, feature-rich                 |
+| JSON Parsing | Manual (`.json()` required)    | Automatic                            |
+| Interceptors | Not included                   | Built-in support                     |
+| Browser-Like | Closely mimics browser `fetch` | Works differently from browser fetch |
 
 ---
 
-#### **Summary**
+## 💡 Practice Task: Get Live Bitcoin Price
 
-- **`node-fetch`** and **`axios`** are both useful libraries for making HTTP requests in Node.js.
-- **`axios`** is a bit more feature-rich, while **`node-fetch`** is simpler and closer to the browser’s native fetch functionality.
-- Understanding how to handle responses and errors is crucial in API requests.
+**Try this on your own!**
+Use either `node-fetch` or `axios` to fetch the current Bitcoin price from the Coindesk API:
 
-Great job! You’ve just learned how to make external API requests in Node.js.
+**API Endpoint:**
+[https://api.coindesk.com/v1/bpi/currentprice/BTC.json](https://api.coindesk.com/v1/bpi/currentprice/BTC.json)
 
+### Example Output to Display
+
+```bash
+Current BTC Price (USD): $62,345.78
+```
+
+---
+
+## 📝 Summary
+
+* You’ve learned how to use both `node-fetch` and `axios` to make external API requests in Node.js.
+* Both libraries serve the same purpose but offer different developer experiences.
+* Practicing with public APIs is a great way to improve your Node.js skills.
+
+---
+
+## 📚 Recommended Reading
+
+* 📘 [React and React Native: 3rd Edition](https://amzn.to/3CStF7m)
+* 📗 [React Key Concepts](https://amzn.to/43XOCJM)
+* 📙 [The Pragmatic Programmer: 20th Anniversary Edition](https://amzn.to/3W1P4oL)
+
+---
+
+## 💬 Join Our Community
+
+* 💡 **Have Questions? Need Guidance?**
+  [Contact us here for mentorship and consulting](/contact)
+
+* 🔗 **Join Our Discord Community**
+  [Click here to connect, learn, and grow with fellow developers](https://discord.gg/A75tvDvZ)
+  
 Happy coding!
 
 \*\* Book Recommendation:
 
-- [React and React Native: A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition](https://amzn.to/3CStF7m)
-- [React Key Concepts](https://amzn.to/43XOCJM)
-- [Pragmatic Programmer](https://amzn.to/3W1P4oL) **_The: Your journey to mastery, 20th Anniversary Edition_**
+-[React and React Native: A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition](https://amzn.to/3CStF7m)
+-[React Key Concepts](https://amzn.to/43XOCJM)
+-[Pragmatic Programmer](https://amzn.to/3W1P4oL) **_The: Your journey to mastery, 20th Anniversary Edition_**
 
 [Mentorship & Consulting - Contact us for more info](/contact)
 

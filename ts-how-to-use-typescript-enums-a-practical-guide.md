@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "How to Use TypeScript Enums: A Practical Guide"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript Enums are a powerful feature that helps developers write more readable and maintainable code."
 isFeatured: false
 category: "Type Script"
 ---
 
-How to Use TypeScript Enums: A Practical Guide
-TypeScript Enums are a powerful feature that helps developers write more readable and maintainable code. They provide a way to define a set of named constants, making working with fixed sets of values easier. Whether you are a beginner or an experienced developer, understanding how to use enums effectively can improve your TypeScript projects.
+
+ They provide a way to define a set of named constants, making working with fixed sets of values easier. Whether you are a beginner or an experienced developer, understanding how to use enums effectively can improve your TypeScript projects.
 This guide will explore the different types of enums, their use cases, and best practices for leveraging them in real-world applications.
 
 ## How to Use TypeScript Enums: A Practical Guide  

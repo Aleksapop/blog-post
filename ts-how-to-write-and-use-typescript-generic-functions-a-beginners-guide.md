@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "How to Write and Use TypeScript Generic Functions: A Beginner's Guide"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript is a powerful superset of JavaScript that adds static typing to the language."
 isFeatured: false
 category: "Type Script"
 ---
 
-How to Write and Use TypeScript Generic Functions: A Beginner's Guide
-TypeScript is a powerful superset of JavaScript that adds static typing to the language. One of its most powerful features is Generics. With Generics, TypeScript allows you to write flexible and reusable functions, classes, and interfaces. In this post, we'll dive into TypeScript generic functions, explore how to write them and show you practical examples to help you level up your TypeScript skills
+
+ One of its most powerful features is Generics. With Generics, TypeScript allows you to write flexible and reusable functions, classes, and interfaces. In this post, we'll dive into TypeScript generic functions, explore how to write them and show you practical examples to help you level up your TypeScript skills
 
 ### What Are TypeScript Generics?
 

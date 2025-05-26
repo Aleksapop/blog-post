@@ -1,17 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "TypeScript Variables and Data Types: A Complete Guide"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript, a superset of JavaScript, brings static typing to the dynamically typed world of JavaScript."
 isFeatured: false
 category: "Type Script"
 ---
 
 
-TypeScript Variables and Data Types: A Complete Guide
-
-TypeScript, a superset of JavaScript, brings static typing to the dynamically typed world of JavaScript. One of its core strengths is its robust type system, which helps developers catch errors early and write more maintainable code. In this guide, we'll explore TypeScript variables and data types in detail, ensuring you understand how to use them effectively in your projects.
+One of its core strengths is its robust type system, which helps developers catch errors early and write more maintainable code. In this guide, we'll explore TypeScript variables and data types in detail, ensuring you understand how to use them effectively in your projects.
 
  Understanding Variables in TypeScript  
 Variables are fundamental building blocks in TypeScript. They serve as named storage for data that can be manipulated throughout a program. In TypeScript, variables hold values and come with type annotations that enhance code safety and maintainability.  

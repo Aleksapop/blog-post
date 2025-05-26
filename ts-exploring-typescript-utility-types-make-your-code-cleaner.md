@@ -1,15 +1,14 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "Exploring TypeScript Utility Types: Make Your Code Cleaner"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript has grown in popularity among developers for its ability to add static typing to JavaScript, improving code quality and maintainability."
 isFeatured: false
 category: "Type Script"
 ---
 
-Exploring TypeScript Utility Types: Make Your Code Cleaner and More Efficient
-TypeScript has grown in popularity among developers for its ability to add static typing to JavaScript, improving code quality and maintainability. One of the most powerful features of TypeScript is its suite of utility types. These built-in types can help you write cleaner, more efficient, and more readable code. In this blog post, we will dive deep into TypeScript utility types, explaining what they are and how they can streamline your development process.
+ One of the most powerful features of TypeScript is its suite of utility types. These built-in types can help you write cleaner, more efficient, and more readable code. In this blog post, we will dive deep into TypeScript utility types, explaining what they are and how they can streamline your development process.
 
 Exploring TypeScript Utility Types: Make Your Code Cleaner
 

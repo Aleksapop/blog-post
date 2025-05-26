@@ -1,15 +1,15 @@
 ---
-title: "What is TypeScript? A Beginner’s Guide to Typed JavaScript"
+title: "Understanding TypeScript Interfaces: The Key to Strong Typing"
 date: "2025-03-20"
 author: "Slavo"
 image: "ts-big-o-notation.png"
-excerpt: "JavaScript is the backbone of modern web development, powering everything from dynamic websites to complex web applications."
+excerpt: "TypeScript is a powerful, statically typed superset of JavaScript that helps developers write cleaner, more reliable code."
 isFeatured: false
 category: "Type Script"
----
+---  
 
 
-Understanding TypeScript Interfaces: The Key to Strong Typing
+
 TypeScript is a powerful, statically typed superset of JavaScript that helps developers write cleaner, more reliable code. One of the key features that make TypeScript stand out is its ability to enforce strong typing, and one of the most essential tools for achieving this is the interface. In this blog post, we will explore TypeScript interfaces, what they are, how to use them, and why they are essential for creating scalable and maintainable applications.
 
 ### What is a TypeScript Interface?

@@ -188,7 +188,16 @@ Join our **Discord** to share progress, ask questions, and connect with other de
 Need help or mentorship?  
 🔗 [Contact us here](/contact)
 
-Happy coding!  
-– Slavo
+Happy coding!
 
----
+\*\* Book Recommendation:
+
+- [React and React Native: A complete hands-on guide to modern web and mobile development with React.js, 3rd Edition](https://amzn.to/3CStF7m)
+- [React Key Concepts](https://amzn.to/43XOCJM)
+- [Pragmatic Programmer](https://amzn.to/3W1P4oL) ***The: Your journey to mastery, 20th Anniversary Edition***
+
+[Mentorship & Consulting - Contact us for more info](/contact)
+
+***Join Our Discord Community*** [Unleash your potential, join a vibrant community of like-minded learners, and let's shape the future of programming together. Click here to join us on Discord.](https://discord.gg/A75tvDvZ)
+
+***For Consulting and Mentorship, feel free to contact*** [slavo.io](/contact)
